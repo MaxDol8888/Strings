@@ -1,0 +1,32 @@
+s=input()
+l=len(s)
+p=l//2+l%2
+#print (s, l,p)
+s1=s[p:]+s[:p]
+print(s1)
+
+
+s = input()
+print(s[(len(s) + 1) // 2:] + s[:(len(s) + 1) // 2])
+
+
+s = input()
+
+s1 = s[:len(s)//2 + len(s)%2]
+s2 = s[len(s)//2 + len(s) % 2:]
+
+s = s2 + s1
+print(s)
+
+
+import math
+
+s = input()
+l = len(s)
+a = math.ceil(l / 2)
+print (s[a:] + s[:a])
+
+
+s = input()
+n = len(s)//2+len(s)%2
+print(str(s[n:])+str(s[:n]))
