@@ -1,0 +1,36 @@
+s=input()
+#print(s.find(' '))
+n=s.find(' ')
+#print (n)
+print(s[n+1:],s[:n])
+
+
+s = input()
+first_word = s[:s.find(' ')]
+second_word = s[s.find(' ') + 1:]
+print(second_word + ' ' + first_word)
+
+
+s=input()
+l=len(s)
+np=s.find(' ')
+pch=s[0:np]
+vch=s[np+1:100]
+f=vch+(' ')+pch
+print(f)
+
+
+a=input()
+i=int(a.find(' '))
+b=a[i:]
+a=a[:i]
+print(b,a)
+
+
+A=input()
+A=A[A.index(' ')+1:]+' '+A[:A.index(' ')]
+print(A)
+
+
+s = input()
+print(s[s.find(" "):],s[:s.find(" ")])
