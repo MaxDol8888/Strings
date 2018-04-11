@@ -1,0 +1,12 @@
+s=input()
+print(s.count(' ')+1)
+
+
+print(input().count(' ') + 1)
+
+
+s = input()
+spaces = s.count(" ")
+print(spaces + 1)
+
+
