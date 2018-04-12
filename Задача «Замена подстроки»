@@ -1,0 +1,19 @@
+s=input()
+print(s.replace('1', 'one'))
+
+
+print(input().replace('1', 'one'))
+
+
+a=input()
+print(a.replace(str(1),'one'))
+
+
+a = input()
+s = ''
+for i in range(len(a)):
+    if a[i] == '1':
+        s += 'one'
+    else:
+        s+= a[i]
+print(s)
