@@ -1,0 +1,40 @@
+s=input()
+a=s.find('h')
+b=s.rfind('h')
+s1=s[a+1:b]
+s2=s1[::-1]
+#print(a,b,s1,s2,s[:a+1]+s2+s[b:])
+print(s[:a+1]+s2+s[b:])
+
+
+s = input()
+a = s[:s.find('h')] 
+b = s[s.find('h'):s.rfind('h') + 1]
+c = s[s.rfind('h') + 1:]
+s = a + b[::-1] + c
+print(s)
+
+
+s=input()
+a=s.find("h")
+b=s.rfind("h")
+print(s[:a]+s[b:a:-1]+s[b:])
+
+
+s = input()
+a = s.find('h')
+b = s.rfind('h')
+str = s[:a + 1] + s[b - 1:a:-1] + s[b:]
+print(str)
+
+
+s=input()
+a1=s.find('h')
+a2=s.rfind('h')
+
+print(s[:a1]+s[a2:a1:-1]+'h'+s[a2+1:])
+
+
+s = input()
+
+print(s[:s.find("h") + 1] + s[s.rfind("h") - 1: s.find("h"): -1] + s[s.rfind("h"):])
