@@ -1,0 +1,46 @@
+s=input()
+a=s.find('h')
+b=s.rfind('h')
+s1=s[a+1:b]
+#print(s1)
+#print(s1.replace('h', 'H'))
+print(s[:a+1]+s1.replace('h', 'H')+s[b:])
+
+
+s = input()
+a = s[:s.find('h') + 1] 
+b = s[s.find('h') + 1:s.rfind('h')]
+c = s[s.rfind('h'):]
+s = a + b.replace('h', 'H') + c
+print(s)
+
+
+str = input()
+f = str.find ('h')
+l = str.rfind ('h') 
+print (str[:f+1] + str[f+1:l].replace('h','H')+ str[l:])
+
+
+s = input()
+
+k = s.find('h')+1
+l = s.rfind('h')
+new = s[k:l]
+x = new.count('h')
+print(s[:k] + new.replace('h', 'H', x) + s[l:])
+
+
+s=input()
+z=s[:s.find('h')+1]
+x=s[s.rfind('h'):len(s)]
+s=s[s.find('h')+1:s.rfind('h')]
+print(z+s.replace('h','H')+x)
+
+
+s = input()
+n = s.find('h')
+m = s.rfind('h')
+s1 = s[n + 1:m]
+s1 = s1.replace('h','H')
+print(s[:n+1] + s1 + s[m:])
+
