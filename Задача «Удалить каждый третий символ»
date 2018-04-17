@@ -1,0 +1,41 @@
+s=str(input())
+l=len(s)
+s1=str('')
+for i in range (1,l):
+    if i%3!=0:
+        s1+=str(s[i])
+    else:
+        i=i+1
+print(s1)
+
+
+s = input()
+t = ''
+for i in range(len(s)):
+    if i % 3 != 0:
+        t = t + s[i]
+print(t)
+
+
+s = input()
+result = ''
+for i in range(0, len(s), 3):
+    result += s[i+1:i+3]
+print(result)
+
+
+s = input()
+x = s[::3]
+y = len(x)
+for i in range(0, y):
+    s=s.replace(x[i], '',1 )
+
+print (s)
+
+
+s = str(input())
+k = ''
+for i in range(0, len(s)):
+    if i % 3 > 0:
+        k += s[i]
+print(k)
